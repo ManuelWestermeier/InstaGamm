@@ -1,0 +1,38 @@
+.Menue {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 0 2px 0 var(--color);
+    overflow: hidden;
+}
+
+.Menue button {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Menue button:hover {
+    transform: scale(1.1);
+}
+
+.Menue svg {
+    background-color: transparent;
+}
+
+.Menue .active {
+    box-shadow: 0 0 10px 0 var(--actent);
+    border: 2px dashed var(--actent);
+}

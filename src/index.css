@@ -1,0 +1,32 @@
+:root {
+  --color: rgb(241, 241, 241);
+  --bg: rgb(15, 15, 15);
+  --actent: dodgerblue;
+}
+
+* {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--color);
+  border: none;
+  outline: none;
+  fill: var(--color);
+}
+
+button,
+a,
+input,
+textarea {
+  transition: all 0.2s ease-in-out;
+}
+
+:focus {
+  box-shadow: 0 0 10px -1px var(--actent);
+}
+
+::selection {
+  color: var(--bg);
+  background-color: var(--actent);
+}
